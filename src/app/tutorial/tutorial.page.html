@@ -1,0 +1,26 @@
+<ion-content>
+  <ion-slides [ngClass]="{'noPager' : reachedEnd}" pager="true" [options]="slideOpts" class="tutsSlides" #tutSlides (ionSlideDidChange)="slideChanged()">
+    <ion-slide *ngFor="let slide of shared.tutotrialSlides">
+      <div>
+        <div class="imageArea">
+          <img [src]="slide.image" />
+        </div>
+        <div class="head h5 font-bold">{{ slide.name }}</div>
+        <div class="paragraph">{{ slide.desc }}</div>
+      </div>
+    </ion-slide>
+  </ion-slides>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" *ngIf="currentSlideIndex != 2">
+    <ion-fab-button size="small" (click)="slideTo('next')" class="bgDoc">
+      <ion-icon name="arrow-forward" md="ios-arrow-forward"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed" *ngIf="currentSlideIndex == 1">
+    <ion-fab-button size="small" color="light" class="white-bg" (click)="slideTo('back')">
+      <ion-icon name="arrow-back" md="ios-arrow-back"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
+<div class="bottomBtn" *ngIf="currentSlideIndex == 2">
+  <ion-button class="docBtn" expand="block" shape="round" (click)="goToHome()">GET STARTED</ion-button>
+</div>

@@ -1,0 +1,92 @@
+@font-face{
+    src:url('../fonts/Poppins-Black.ttf');
+    font-family: "Poppins-Black";
+}
+@font-face{
+    src:url('../fonts/Poppins-Medium.ttf');
+    font-family: "Poppins-Medium";
+}
+@font-face{
+    src:url('../fonts/Poppins-Bold.ttf');
+    font-family: "Poppins-Bold";
+}
+@font-face{
+    src:url('../fonts/Poppins-Regular.ttf');
+    font-family: "Poppins-Regular";
+}
+@font-face{
+    src:url('../fonts/Poppins-Black.ttf');
+    font-family: "Poppins-Black";
+}
+@font-face{
+    src:url('../fonts/Poppins-Black.ttf');
+    font-family: "Poppins-Black";
+}
+@font-face{
+    src:url('../fonts/Poppins-Black.ttf');
+    font-family: "Poppins-Black";
+}
+@font-face{
+    src:url('../fonts/Poppins-Black.ttf');
+    font-family: "Poppins-Black";
+}
+.paragraph{
+    font-size:0.840rem;
+    font-family: "Poppins-Regular";
+}
+.head{
+    color:#020202;
+}
+.head.h1{
+    font-size:2.35rem;
+}
+.head.h2{
+    font-size:2.0rem;
+}
+.head.h3{
+    font-size:1.85rem;
+}
+.head.h4{
+    font-size:1.45rem;
+}
+.head.h5{
+    font-size:1rem;
+}
+.head.h6{
+    font-size:0.5rem;
+}
+.font-medium{
+    font-family: "Poppins-Medium";
+}
+.font-bold{
+    font-family: "Poppins-Bold";
+}
+.tutsSlides .swiper-pagination-bullet{
+    width: 30px;
+    border-radius: 50px;
+    height: 6px;
+    transition: ease all 0.4s;
+    background:#c4c4c4;
+    opacity: 1;
+    border:1px solid #bbbbbb;
+}
+.tutsSlides .swiper-pagination-bullet-active{
+    background:linear-gradient(to right, #3858e7,#5d85f4);
+    border-color:#507af2;
+}
+.noPager .swiper-pagination{
+    display:none;
+}
+.bottomBtn{
+    margin:0 20px 10px;
+}
+.bgDoc{
+    --background:linear-gradient(to right, #3858e7,#5d85f4);
+}
+.docBtn{
+    --background:linear-gradient(to right, #3858e7,#5d85f4);
+    font-family: "Poppins-Medium";
+    font-size: 0.854rem;
+    min-height:40px;
+    letter-spacing: normal;
+}
