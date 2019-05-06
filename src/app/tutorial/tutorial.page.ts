@@ -51,9 +51,9 @@ export class TutorialPage implements OnInit {
     }
   }
 
-  goToHome(){
+  goToLogin(){
     // this.nav.push(HomePage);
-    this.router.navigate(['/home']);
+    this.router.navigate(['/login']);
     this.shared.isDoneWithTutorial = true;
   }
 

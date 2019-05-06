@@ -26,7 +26,7 @@ export class AppComponent {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
       if(this.shared.isDoneWithTutorial){
-        this.router.navigate(['/home']);
+        this.router.navigate(['/login']);
       }
     });
     this.platform.backButton.subscribe((res)=>{

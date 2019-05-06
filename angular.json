@@ -38,6 +38,7 @@
               {
                 "input": "src/global.scss"
               },
+              "src/assets/fonts/fontawesome/css/all.min.css",
               "src/assets/scss/styles.scss"
             ],
             "scripts": [],
